@@ -1,23 +1,41 @@
-.caja1 { grid-area: cajauno; }
-.caja2 { grid-area: cajados; }
-.caja3 { grid-area: cajatres; }
-.caja4 { grid-area: cajacuatro; }
-.caja5 { grid-area: cajacinco; }
+.caja1 { grid-area: uno;}
+.caja2 { grid-area: dos;}
+.caja3 { grid-area: tres;}
+.caja4 { grid-area: cuatro;}
+.caja5 { grid-area: cinco;}
+
 
 .contenedor {
+   
     display: grid;
     grid-template-areas: 
-    'cajauno cajauno cajauno cajauno cajauno cajauno'
-    'cajados cajatres cajatres cajatres cajacuatro cajacuatro'
-    'cajados cajacinco cajacinco cajacinco cajacinco';
-    gap: 10px;
-    background-color: #2196f3;
+    'uno uno uno uno uno uno'
+    'dos dos dos dos dos dos'
+    'tres tres tres cuatro cuatro cuatro'
+    'cinco cinco cinco cinco cinco cinco';
+    /*gap: 10px;*/
+    background-color: #4a5b69;
     padding: 10px;
+    border: 4px dashed black;
+    height: 84%;
+    width: 84%;
 }
 
 .contenedor > div {
-    background-color: rgba(255, 255, 255, 0.8);
+  
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
+    border: solid 3px;
+     }
+   
+.caja1 {background-color: pink;
+}
+.caja2 {background-color: rgb(139, 206, 139);
+}
+.caja3 {background-color: rgb(92, 92, 244);
+}
+.caja4 {background-color: rgb(225, 225, 146);
+}
+.caja5 {background-color: rgb(110, 226, 226);
 }
