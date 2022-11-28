@@ -1,0 +1,23 @@
+.caja1 { grid-area: cajauno; }
+.caja2 { grid-area: cajados; }
+.caja3 { grid-area: cajatres; }
+.caja4 { grid-area: cajacuatro; }
+.caja5 { grid-area: cajacinco; }
+
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+    'cajauno cajauno cajauno cajauno cajauno cajauno'
+    'cajados cajatres cajatres cajatres cajacuatro cajacuatro'
+    'cajados cajacinco cajacinco cajacinco cajacinco';
+    gap: 10px;
+    background-color: #2196f3;
+    padding: 10px;
+}
+
+.contenedor > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
